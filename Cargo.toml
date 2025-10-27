@@ -1,0 +1,17 @@
+[package]
+name = "japanese_law_id"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.87.0"
+license = "MIT"
+authors = ["Naoki Kaneko"]
+repository = "https://github.com/japanese-law-analysis/japanese_law_id.git"
+readme = "README.md"
+
+[features]
+serde = [ "dep:serde" ]
+
+[dependencies]
+kansuji = "0.1.1"
+regex = "1.12.2"
+serde = { version = "1.0.228", optional = true, features = ["derive"] }

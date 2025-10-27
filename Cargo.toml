@@ -1,6 +1,9 @@
 [package]
 name = "japanese_law_id"
+description = "日本の法令IDの解析"
 version = "0.1.0"
+categories = ["parsing"]
+keywords = ["legal", "japanese-legal", "law"]
 edition = "2024"
 rust-version = "1.87.0"
 license = "MIT"

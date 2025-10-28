@@ -181,6 +181,12 @@ impl Wareki {
             }
         })
     }
+    pub fn get_era(&self) -> Era {
+        self.era
+    }
+    pub fn get_year(&self) -> usize {
+        self.year
+    }
 }
 
 #[test]
@@ -269,6 +275,21 @@ impl Date {
     /// 和暦年の取得
     pub fn gen_wareki_year(self) -> Wareki {
         Wareki::from_ad(self.year, self.month, self.day)
+    }
+
+    pub fn get_month(self) -> usize {
+        self.month
+    }
+
+    pub fn get_day(self) -> usize {
+        self.day
+    }
+
+    pub fn joined_str(self) -> String {
+        format!(
+            "/eli/{:0>4}/{:0>2}/{:0>2}/",
+            self.year, self.month, self.day
+        )
     }
 }
 
